@@ -30,7 +30,16 @@ console.log(props)
   <div class="greetings">
     <h1 class="green">{{ "收到了父组件的传参 = " + props.title + "&" + props.value }}</h1>
     <!-- <button @click="$emit('submitBtn', count)"> {{ count }} </button> -->
-    <button @click="submitBtn()"> {{ count }} </button>
+    <el-row class="mb-4">
+    <el-button>Default</el-button>
+    <el-button type="primary">Primary</el-button>
+    <el-button type="success">Success</el-button>
+    <el-button type="info">Info</el-button>
+    <el-button type="warning">Warning</el-button>
+    <el-button type="danger">Danger</el-button>
+  </el-row>
+    <el-button type="primary" @click="submitBtn()"> {{ count }} </el-button>
+    <el-button type="success">Success</el-button>
     <h3>
       This is a Web to Test Vue3 funcation
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">props.title</a> +
